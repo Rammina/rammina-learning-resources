@@ -2,9 +2,11 @@
 
 ## Overview
 
-Rammina Dev & Design's open-source resource list for blogs, business, communication, design, software development, job searching, learning curriculums, professional conduct, and other topics. Anyone may use these resources, but crediting the original authors would be highly appreciated!
+Rammina Dev & Design's **open-source resource list** for blogs, business, communication, design, software development, job searching, learning curriculums, professional conduct, and other topics. 
 
-Contributions are also accepted and encouraged. Feel free to submit a pull request or contact [Rammina](https://github.com/Rammina/) and other maintainers.
+Anyone may use these resources, but crediting the original authors would be highly appreciated!
+
+**Contributions** are also accepted and encouraged. Feel free to **submit a pull request** or contact [Rammina](https://github.com/Rammina/) and other maintainers.
 
 ## Table of Contents
 
@@ -19,6 +21,8 @@ Contributions are also accepted and encouraged. Feel free to submit a pull reque
   - [Job searching]()
   - [Learning curriculums]()
   - [Professional conduct]()
+  - [Archived]()
+  - [Uncategorized new additions]()
 - [License]()
 
 //TODO: make sure the links are functional (they don't point to anything right now)
