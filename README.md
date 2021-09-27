@@ -1,16 +1,24 @@
-# Rammina's Infodump
+# Rammina Open-Source Resources List
 
 ## Overview
 
-Rammina's personal storage for articles, plans, posts, notes, and other ramblings. Intended for personal use, but friendly enough for public viewing.
+Rammina Dev & Design's open-source resource list for blogs, business, communication, design, software development, job searching, learning curriculums, professional conduct, and other topics. Anyone may use these resources, but crediting the original authors would be highly appreciated!
+
+Contributions are also accepted and encouraged. Feel free to submit a pull request or contact [Rammina](https://github.com/Rammina/) and other maintainers.
 
 ## Table of Contents
 
 - [Getting Started]()
   - [Using this repository]()
-- [Plans]()
-- [Notes]()
-- [Ramblings Junkyard]()
+- [Topics]()
+  - [Blogs]()
+  - [Business]()
+  - [Communications]()
+  - [Design]()
+  - [Software development]()
+  - [Job searching]()
+  - [Learning curriculums]()
+  - [Professional conduct]()
 - [License]()
 
 //TODO: make sure the links are functional (they don't point to anything right now)
@@ -19,9 +27,7 @@ Rammina's personal storage for articles, plans, posts, notes, and other rambling
 
 It doesn't take much to get started. Anyone who can read markdown and has sufficient knowledge about a topic likely can understand the content.
 
-### Using this repository
-
-Anything that's not in my ramblings junkyard is likely readable for fellow professionals. Feel free to use the information here for your personal needs, but crediting me (and the original source) is highly appreciated.
+//TODO: maybe introduce the reader to the topics contained in this list
 
 ## Plans
 
