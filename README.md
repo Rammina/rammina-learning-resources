@@ -33,24 +33,6 @@ It doesn't take much to get started. Anyone who can read markdown and has suffic
 
 //TODO: maybe introduce the reader to the topics contained in this list
 
-## Plans
-
-This section contains links to my current goals and plans, both individual and collective.
-
-//TODO: move notepad and GoogleDocs files to this repository and convert them to markdown
-
-## Notes
-
-This section contains links to notes that are intended for personal and public viewing.
-
-//TODO: move notepad and GoogleDocs files to this repository and convert them to markdown
-
-## Ramblings Junkyard
-
-This section contains links to incomprehensible and unprocessed thoughts that are not presented well.
-
-//TODO: move notepad and GoogleDocs files to this repository and convert them to markdown
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md file]() for details.
