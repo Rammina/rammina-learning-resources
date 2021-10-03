@@ -10,20 +10,20 @@ Anyone may use these resources, but crediting the original authors would be high
 
 ## Table of Contents
 
-- [Getting Started]()
-  - [Using this repository]()
+- [Getting Started](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#getting-started)
+  - [How to Contribute](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#how-to-contribute)
 - [Topics]()
-  - [Open Source Learning Curriculums]()
-  - [Blogs]()
-  - [Business]()
-  - [Communications]()
-  - [Design]()
-  - [Software development]()
-  - [Job searching]()  
-  - [Professional conduct]()
-  - [Archived]()
-  - [Uncategorized new additions]()
-- [License]()
+  - [Open Source Learning Curriculums](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#open-source-learning-curriculums)
+  - [Blogs](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#blogs)
+  - [Business](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#business)
+  - [Communications](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#communications)
+  - [Design](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#design)
+  - [Software Development](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#software-development)
+  - [Job Searching](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#job-searching)  
+  - [Professional Conduct](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#professional-conduct)
+  - [Archived](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#archived)
+  - [Uncategorized New Additions](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#uncategorized-new-additions)
+- [License](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#license)
 
 //TODO: make sure the links are functional (they don't point to anything right now)
 
@@ -45,6 +45,10 @@ We appreciate any useful resources you can share with the developer community!
 That's it! I (or a maintainer) will review the Pull Request and merge if its acceptable.
 
 If there are any questions about your contribution, we'll ask them or request changes through the PR process.
+
+## Topics 
+
+This open-source resource list has multiple topics you can explore!
 
 ## Open Source Learning Curriculums
 
