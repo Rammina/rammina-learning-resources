@@ -53,6 +53,10 @@ This open-source resource list has multiple topics you can explore!
 
 ## Free Learning Curriculums
 
+It's highly recommended that you pick a curriculum that you're really interested in and stick to it. 
+
+NOTE: Jumping around between different resources is the easiest way to get stuck without progressing!
+
 ### Web Development Curriculums
 
 - [The Odin Project](https://www.theodinproject.com/home) - **Highly-recommended**, comprehensive full-stack development curriculum (has Ruby and JavaScript paths). 
@@ -63,6 +67,16 @@ This open-source resource list has multiple topics you can explore!
 
 - [Fullstack Open: Deep Dive Into Modern Web Development](https://fullstackopen.com/en/) - University of Helsinki's full-stack course.   
 
+### UI/UX Design Curriculums 
+
+- [Springboard's Free UX Design Curriculum](https://www.springboard.com/resources/learning-paths/user-experience-design/?utm_source=r&utm_medium=t&utm_campaign=uxlp) - **Highly-recommended** design curriculum.
+- [Hack Design](https://hackdesign.org/lessons) - Has really good lessons but is a bit disorganized.
+
+### Open Source Society University
+
+- [OSSU Computer Science Curriculum](https://github.com/ossu/computer-science)
+- [OSSU Data Science Curriculum](https://github.com/ossu/data-science)
+- [OSSU Bioinformatics Curriculum](https://github.com/ossu/bioinformatics)
 
 ## Blogs
 
