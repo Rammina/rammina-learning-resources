@@ -13,13 +13,13 @@ Anyone may use these resources, but crediting the original authors would be high
 - [Getting Started]()
   - [Using this repository]()
 - [Topics]()
+  - [Open Source Learning Curriculums]()
   - [Blogs]()
   - [Business]()
   - [Communications]()
   - [Design]()
   - [Software development]()
-  - [Job searching]()
-  - [Learning curriculums]()
+  - [Job searching]()  
   - [Professional conduct]()
   - [Archived]()
   - [Uncategorized new additions]()
@@ -38,14 +38,35 @@ We appreciate any useful resources you can share with the developer community!
 **Steps to adding a resource:**
 
 1. Fork this repo and clone onto your local machine
-2. Create a feature branch following the conventions documented in [Contributing](https://github.com/chingu-voyages/ChinguResourceList/blob/development/docs/CONTRIBUTING.md).
-3. Add your resource to the appropriate category & test it to make sure it
-is consistent with how other resources are formatted.
+2. Create a feature branch following the conventions documented in the [CONTRIBUTING.md](https://github.com/Rammina/rammina-learning-resources/blob/main/CONTRIBUTING.md).
+3. Add your resource to the appropriate category & test it to make sure it is consistent with how other resources are formatted.
 4. Create a Pull Request (PR)
 
 That's it! I (or a maintainer) will review the Pull Request and merge if its acceptable.
 
 If there are any questions about your contribution, we'll ask them or request changes through the PR process.
+
+## Open Source Learning Curriculums
+
+## Blogs
+
+## Business
+
+## Communications
+
+## Collaboration Tools
+
+## Design
+
+## Software Development
+
+## Job Searching
+
+## Professional Conduct
+
+## Archived
+
+## Uncategorized New Additions
 
 ## License
 
