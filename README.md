@@ -51,7 +51,18 @@ If there are any questions about your contribution, we'll ask them or request ch
 
 This open-source resource list has multiple topics you can explore!
 
-## Open Source Learning Curriculums
+## Free Learning Curriculums
+
+### Web Development Curriculums
+
+- [The Odin Project](https://www.theodinproject.com/home) - **Highly-recommended**, comprehensive full-stack development curriculum (has Ruby and JavaScript paths). 
+- [App Academy Open](https://www.appacademy.io/course/app-academy-open) - App Academy's bootcamp full-stack curriculum accessible to the public.
+- [FreeCodeCamp](https://www.freecodecamp.org/) - Full-stack curriculum in an interactive web platform with a large community of developers.
+
+#### Special Mentions 
+
+- [Fullstack Open: Deep Dive Into Modern Web Development](https://fullstackopen.com/en/) - University of Helsinki's full-stack course.   
+
 
 ## Blogs
 
