@@ -12,7 +12,7 @@ Anyone may use these resources, but crediting the original authors would be high
 
 - [Getting Started](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#getting-started)
   - [How to Contribute](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#how-to-contribute)
-- [Topics]()
+- [Topics](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#topics)
   - [Open Source Learning Curriculums](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#open-source-learning-curriculums)
   - [Blogs](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#blogs)
   - [Business](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#business)
