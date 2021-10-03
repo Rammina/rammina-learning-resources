@@ -48,25 +48,25 @@ Resolves: <issue URL>
 See also: <reference URLs>
 ```
 
-_Type_ describes the nature of the change and should be one of the following:
+`Type` describes the nature of the change and should be one of the following:
 
 - `feature`: a new feature
 - `fix`: a bug fix
 - `docs`: changes to documentation
 - `style`: formatting, missing semi colons, etc; no code change
 
-_Subject_ is a short imperative statement of no more than 50 characters that describes the intent of the commit.
+`Subject` is a short imperative statement of no more than 50 characters that describes the intent of the commit.
 
-_Body_ provides a more detailed explanation of the context, why, and what of the changes included in the commit.
+`Body` provides a more detailed explanation of the context, why, and what of the changes included in the commit.
 
 Remember that the body shouldn't describe how the code operates. Comments within the code should describe how it functions when and where necessary. 
 
 Be sure to separate the body from other
 parts of the commit message using blank lines.
 
-_Resolves_ documents one or more issues the commit closes. These should be specified as URL's to those issues. Specify this as 'N/A' if the commit isn't associated with an issue.
+`Resolves` documents one or more issues the commit closes. These should be specified as URL's to those issues. Specify this as 'N/A' if the commit isn't associated with an issue.
 
-_See also_ may be used to reference any other supporting documentation. For example, URL's to Gist's.
+`See also` may be used to reference any other supporting documentation. For example, URL's to Gist's.
 
 ### Git Branches
 
