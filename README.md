@@ -17,6 +17,7 @@ Anyone may use these resources, but crediting the original authors would be high
   - [Blogs](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#blogs)
   - [Business](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#business)
   - [Communications](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#communications)
+  - [Collaboration Tools](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#collaboration-tools)
   - [Design](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#design)
   - [Software Development](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#software-development)
   - [Job Searching](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#job-searching)  
