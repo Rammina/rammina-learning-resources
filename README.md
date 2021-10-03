@@ -21,7 +21,7 @@ Anyone may use these resources, but crediting the original authors would be high
   - [Design](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#design)
   - [Software Development](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#software-development)
   - [Job Searching](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#job-searching)  
-  - [Interviewing]()
+  - [Interviewing](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#interviewing)
   - [Professional Conduct](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#professional-conduct)
   - [Archived](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#archived)
   - [Uncategorized New Additions](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#uncategorized-new-additions)
