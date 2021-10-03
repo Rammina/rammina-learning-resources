@@ -31,10 +31,24 @@ Anyone may use these resources, but crediting the original authors would be high
 
 It doesn't take much to get started. Anyone who can read markdown and has sufficient knowledge about a topic likely can understand the content.
 
-//TODO: maybe introduce the reader to the topics contained in this list
+### How to Contribute
+
+We appreciate any useful resources you can share with the developer community! 
+
+**Steps to adding a resource:**
+
+1. Fork this repo and clone onto your local machine
+2. Create a feature branch following the conventions documented in [Contributing](https://github.com/chingu-voyages/ChinguResourceList/blob/development/docs/CONTRIBUTING.md).
+3. Add your resource to the appropriate category & test it to make sure it
+is consistent with how other resources are formatted.
+4. Create a Pull Request (PR)
+
+That's it! I (or a maintainer) will review the Pull Request and merge if its acceptable.
+
+If there are any questions about your contribution, we'll ask them or request changes through the PR process.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md file]() for details.
+This project is licensed under the MIT License - see the [LICENSE.md file](https://github.com/Rammina/rammina-learning-resources/blob/main/LICENSE) for details.
 
-//TODO: add the link to the license file
+[<< Back to Table of Contents](https://github.com/Rammina/rammina-learning-resources#table-of-contents)
