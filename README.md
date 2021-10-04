@@ -27,8 +27,6 @@ Anyone may use these resources, but crediting the original authors would be high
   - [Uncategorized New Additions](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#uncategorized-new-additions)
 - [License](https://github.com/Rammina/rammina-learning-resources/blob/main/README.md#license)
 
-//TODO: make sure the links are functional (they don't point to anything right now)
-
 ## Getting Started
 
 It doesn't take much to get started. Anyone who can read markdown and has sufficient knowledge about a topic likely can understand the content.
