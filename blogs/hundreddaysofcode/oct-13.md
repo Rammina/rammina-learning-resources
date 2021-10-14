@@ -48,6 +48,13 @@ Here are some of the things I've learned:
 - the Product Backlog will never run out of items, there is always something to add and work on.
 - the Development Team is responsible for all estimates, and the Product Owner only influences the Development Team by helping it understand and choose trade-offs
 
+### Resources/Recommended Readings
+
+- [The Fullstack Tutorial for GraphQL](https://www.howtographql.com/)
+- [Apollo Docs](https://www.apollographql.com/docs/)
+- [The 2020 Scrum Guide](https://scrumguides.org/scrum-guide.html)
+- [Mikhail Lapshin's Scrum Quizzes](https://mlapshin.com/index.php/scrum-quizzes/)
+
 How is everyone doing in their learning journey? Feel free to chat with me in the comments and/via DM!
 
 ### DISCLAIMER
