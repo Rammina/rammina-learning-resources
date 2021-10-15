@@ -1,4 +1,4 @@
-Good morning, everyone!
+Good day, everyone!
 
 Today was rather stressful, but I still managed to get my minimum required work done, along with some side Photoshop work.
 
@@ -10,7 +10,7 @@ Firstly, I had to go through a panel interview, which I find anxiety-inducing fo
 
 I don't really understand why businesses feel the need to have 5 people interview someone, each of them crossing their arms and taking turns to ask questions. In some places I've interviewed with, they invite someone that's not really relevant and doesn't even talk. I just think it's inefficient, but that's just my opinion anyway.
 
-I believe I did well in the interview (I think the wait drained me more than the interview itself), but I should've asked more questions to show interest in the job position or in the company. Not asking questions is a yellow flag that shows that a candidate is kind of apathetic with regards to the company and job position.
+I believe I did well in the interview (I think the wait drained me more than the interview itself), but I should've asked more questions to show interest in the job position or in the company. Not asking questions is a yellow flag that shows that a candidate is kind of apathetic with regard to the company and job position.
 
 ## Dating Site Ad?
 
@@ -20,7 +20,7 @@ I was practicing Photoshop on the side as well. Specifically, I tried to make a 
 
 ### The result?
 
-It looks like a dating site ad, and I kind of cringed inside to be honest. Maybe I will update it some more, but I could also just use this because it looks pretty nice anyway and the meme value might give it more attention.
+It looks like a dating site ad, and I kind of cringed inside, to be honest. Maybe I will update it some more, but I could also just use this because it looks pretty nice anyway and the meme value might give it more attention.
 
 ## Yesterday
 
