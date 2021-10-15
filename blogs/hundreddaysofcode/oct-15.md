@@ -32,7 +32,7 @@ Here are some of the things I've learned/reviewed:
 
 ### GraphQL
 
-I'm reviewing everything I learned about GraphQL this week, especially the gaps in my knowledge.
+I'm reviewing everything I learned about GraphQL this week, especially the gaps in my knowledge. I'm also learning more about use cases and comparisons of REST and GraphQL.
 
 ### Scrum
 
