@@ -1,6 +1,12 @@
-Happy Friday, everyone!
+Good day, everyone!
 
-Today, I took a break from coding and learning Scrum. I simply did 2 hours of learning for the challenge. After all, I can't always be working nonstop and I also wanted to spend time with my family. I do care about my work-life balance and I don't like neglecting my loved ones.
+Today, I took a break from coding and learning Scrum. I simply did 2 hours of learning for the challenge. After all, I can't always be working nonstop and I also wanted to spend time with my family. I do care about my work-life balance and I don't like neglecting my loved ones. If I was asked whether I'd prioritize my profession or my loved ones, I would always go for the latter first.
+
+## Off-topic Vent
+
+Actually, I had to provide emotional comfort for my wife and listen to her. She is suffering from debilitating anxiety and depression, but I still love her and want to be with her. Of course, I empathize with her because I deal with similar problems myself. I'm glad we managed to resolve this for today.
+
+Anyway, moving on to the meat of the challenge.
 
 ## Yesterday
 
@@ -21,7 +27,7 @@ Here are the things I've learned and done today:
 - GraphQL apparently lets you have UI code and data requirements side-by-side.
 - GraphQL server lets you send batched requests and batched resolvers.
 
-Have a great Friday and weekend everyone! Thank you for reading!
+I hope everyone is doing well. Thank you for reading!
 
 ### Resources/Recommended Readings
 
