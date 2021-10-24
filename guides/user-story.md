@@ -46,7 +46,7 @@ Here are examples of bad user stories, and why they don't work:
 
 > As a customer ordering fast food online, I want to find previous food order lists so that I can see all the orders that I have.
 
-Problem: The value is absent from this user story, because `so that I can see all the orders that I have` is just a re-statement of `find previous food order lists`.
+Problem: The benefit/value is absent from this user story, because `so that I can see all the orders that I have` is just a re-statement of `find previous food order lists`.
 
 > As a QA tester, I want to have access to test plans so that when the product is finished, I know how to test it.
 
@@ -70,10 +70,24 @@ These user stories work well because they have the characteristics of INVEST:
 
 - their functionality is not dependent on other stories
 - they leave room for different implementation options
-- they add user value
+- they add user value to the project
 - their scope and size can definitely be estimated by developers
 - they are small enough to be planned around and/or reprioritized against other stories
 - they can be tested
+
+## Completing a User Story
+
+Now that you know how to make great user stories, you'd probably like to know when they are finished. A user story is completed when it meets its Acceptance Criteria and its Definition of Done (DoD). But what do these terms mean?
+
+### Acceptance Criteria
+
+The Acceptance Criteria of a user story consist of the set of test cases that must be fulfilled to ensure that the software is working as intended. Like user stories should be written from the perspective of a user. They should be clear, concise, and easily utilize by the development team. Acceptance criteria should not be concerned about implementation, but only about which features should be present and included. Each user story will have different Acceptance Criteria based on its requirements.
+
+### Definition of Done (DoD)
+
+The Definition of Done (DoD) is a list of requirements that a user story or Increment must adhere to for the team to call it complete. The DoD serves as a checklist that guides various pre-implementation activities such as discussion, estimation, and design. By ensuring that the DoD is followed, the team can minimize reworking on user stories.
+
+Its difference from Acceptance Criteria is that DoD is common for all the user stories whereas a acceptance criteria is applicable to only a specific user story.
 
 ## User Stories in Agile/Scrum Environments
 
@@ -81,7 +95,7 @@ These user stories work well because they have the characteristics of INVEST:
 
 In Agile/Scrum environments, a team would utilize user stories as part of their Product Backlog. Each story represents a single unit of functionality in a project, and a backlog contains multiple user stories. Unlike a Product Backlog Item (PBI), a user story depicts more than just a specific requirement, change, or bug fix. Its focus is on the end-user and their experience. A user story is an increment that provides value to the overall product. Many teams nowadays use issue trackers or tickets for listing user stories, while others still use sticky notes. As PBIs become higher-ordered in the Product Backlog, they tend to be broken down into user stories with more specific tasks listed.
 
-## Pros and Cons
+## Pros and Cons of User Stories
 
 <img src="https://heavencpa.com/wp-content/uploads/2019/03/pros-vs-cons-heaven-and-alvarez-1024x683.png" alt="Pros and Cons" />
 
@@ -104,11 +118,37 @@ In Agile/Scrum environments, a team would utilize user stories as part of their 
 - can be misunderstood and misused
 - can lose its original essence/purpose (especially in companies and teams that are "agile" only for compliance purposes)
 
+## Frequently Asked Questions (FAQ)
+
+**Who writes user stories?**
+
+Anyone can write user stories. In a Agile/Scrum environment, the Product Owner is responsible for the backlog of all user stories. However, anyone in the entire team can make them.
+
+**When should you write user stories?**
+
+User stories can be written anytime. Typically, a team will hold a meeting at the start of the project to create user stories to identify initial project requirements. It is impossible to identify all of them at the beginning, so the team will create user stories over the course of the project timeline as they discover more user requirements.
+
+**When is a user story completed or finished?**
+
+A user story is completed when it meets its Acceptance Criteria and its Definition of Done (DoD).
+
+**Do user stories replace a requirements document?**
+
+They don't, as they serve different purposes. A user story focuses on the experience and needs of users, while a requirements document go into a lot of detail about features necessary for a project. User stories focus on the _who_, _what_, and _why_. On the other hand, requirements documents focus on the _what_ and _how_.
+
+**What are the differences between user stories and Product Backlog Items?**
+
+At first glance, they seem similar, but there is a key difference: User stories place an emphasis on the end-users and their experiences. On the other hand, a Product Backlog Item merely represent a specific change, requirement, or bug fix without being concerned much about the _who_.
+
+**Are user stories like pseudocode?**
+
+They are used differently. Pseudocode is mainly concerned about implementation details and how a developer would build a solution, and user stories completely leave out the implementation details in exchange for focusing on the user experience. User stories focus on the _who_, _what_, and _why_. On the other hand, pseudocode focus on the _what_ and _how_.
+
 ## Resources/Recommended Reading:
 
 - [User Story Guide by Mike Cohn](https://www.mountaingoatsoftware.com/agile/user-stories#:~:text=User%20stories%20are%20short%2C%20simple,so%20that%20)
 - [How To Create a Perfect User Story - Step by Step Guide](https://blog.anvileight.com/posts/how-to-create-a-perfect-user-story-step-by-step-guide/)
-- [New to agile? INVEST in good user stories](https://agileforall.com/new-to-agile-invest-in-good-user-stories/)
+- [New to Agile? INVEST in good user stories](https://agileforall.com/new-to-agile-invest-in-good-user-stories/)
 
 ### DISCLAIMER:
 

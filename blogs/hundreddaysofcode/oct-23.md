@@ -31,6 +31,8 @@ In any case, here were the things I've done:
 - I definitely networked a lot on multiple platforms.
 - I made a new [Twitter account](https://twitter.com/RamminaR).
 
+<small><cite>Image by <a href="https://pixabay.com/users/ichigo121212-11728/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=203465">Ichigo121212</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=203465">Pixabay</a></cite></small>
+
 ## Weekly Retrospective
 
 Moving on, let's tackle what I've managed to do well, what my shortcomings are, and what I could do better next time.
