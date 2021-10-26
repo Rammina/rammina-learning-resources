@@ -25,7 +25,7 @@ Here are the things I learned and worked on today:
   - `Confirmation` - agree upon what to build, then record the said agreement. This allows for confirmation tests to ensure that the user story is completed.
 - did more practice quizzes on Scrum (almost finished with Lapshin's quizzes, so I might have to get a different set soon).
 
-Thank you once again for everyone's support! I wish you all the best.
+Thank you once again for everyone's support! I wish you all the best, and have a good day.
 
 ### Resources/Recommended Readings
 
