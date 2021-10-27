@@ -15,7 +15,16 @@ Here are the things I learned and worked on today:
 ### Scrum
 
 - read more about how [not everything has to be a user story](https://www.mountaingoatsoftware.com/blog/not-everything-needs-to-be-a-user-story-using-fdd-features).
-- there are cases in which user stories are not necessary, like internal company projects, and personal projects.
+- there are cases in which user stories are not necessary, like internal company projects, projects for technical people, and personal projects.
+- When a Sprint is cancelled:
+  - any completed and “Done” Product Backlog items are reviewed.
+  - if part of the work is potentially releasable, the Product Owner typically accepts it.
+  - all incomplete Product Backlog Items are re-estimated and put back on the Product Backlog.
+- the three pillars that uphold Scrum are:
+  - transparency
+  - inspection
+  - adaptation
+- did some practice flashcards for Scrum.
 
 Thank you once again for everyone's support! I wish you all the best, and have a good day.
 
