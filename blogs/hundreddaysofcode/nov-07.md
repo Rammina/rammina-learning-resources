@@ -18,7 +18,7 @@ It's a new week, so I decided on what I will be doing and established my new `Sp
 - continue studying for Professional Scrum Master I (PSM I) certification.
 - continue networking, but allocate less time to this (coding is more important).
 
-Have a great week, everyone!
+Thank you for reading. Have a great week!
 
 ### Resources/Recommended Readings
 
