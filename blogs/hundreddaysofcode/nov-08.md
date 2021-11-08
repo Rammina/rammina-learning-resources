@@ -8,7 +8,7 @@ Anyway, let's move on to my daily report!
 
 ## Yesterday
 
-I did my Sprint Planning yesterday, and I said I'll be focusing on **Next.js** and **Typescript**, while still studying Scrum.
+I did my Sprint Planning yesterday, and I said I'll be focusing on **Next.js** and **Typescript**, while still studying **Scrum**.
 
 ## Today
 
