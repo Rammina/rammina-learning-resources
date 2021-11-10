@@ -41,6 +41,8 @@ I want to make some time for studying Typescript, but maybe tomorrow onwards.
 
 Have a good day, everyone!
 
+![Thank You Banner](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/x9ayfxxxaz2g2hfcqbsk.png)
+
 ### Resources/Recommended Readings
 
 - [Official Next.js tutorial](https://nextjs.org/learn/basics/create-nextjs-app?utm_source=next-site&utm_medium=nav-cta&utm_campaign=next-website)
