@@ -1,6 +1,6 @@
 My main Internet connection was dead today. That really killed my productivity.
 
-This blog post was sent using 4G mobile data. Thankfully, I have some offline resources like flashcards and e-books, so I could still somehow study a little bit.
+This blog post was sent using 4G mobile data. Thankfully, I have some offline resources like flashcards and e-books, so I could still somehow study a little bit. I also was kind of dizzy earlier in the morning and was stuck on bed for a while. I'm just going to put the `badday` label for today, one of those things I can't control.
 
 Anyway, let's move on to my daily report...
 
