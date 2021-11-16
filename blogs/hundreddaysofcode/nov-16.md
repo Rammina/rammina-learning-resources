@@ -38,6 +38,10 @@ Have a great start to your week, everyone!
 - [The 2020 Scrum Guide](https://scrumguides.org/scrum-guide.html)
 - [Mikhail Lapshin's Scrum Quizzes](https://mlapshin.com/index.php/scrum-quizzes/)
 
+### Cover Image
+
+- [Kate Stone Matheson on Unsplash](https://unsplash.com/photos/uy5t-CJuIK4)
+
 ### DISCLAIMER
 
 **This is not a guide**, it is just me sharing my experiences and learnings. This post only expresses my thoughts and opinions (based on my limited knowledge) and is in no way a substitute for actual references. If I ever make a mistake or if you disagree, I would appreciate corrections in the comments!
