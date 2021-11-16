@@ -18,7 +18,8 @@ Here are the things I learned and worked on today:
 
 - coded my services and portfolio sections for the homepage.
 - skeletons are mostly there, but design is temporary and will be improved.
-- aspect ratios are getting annoying to deal with when using Next.js `<Image />` because there is no cover option for objectFit property. I only can use absolute dimensions or fill, which are bad for responsiveness.
+
+EDIT: Apparently, Next.js `<Image />` has `objectFit="cover"` as an attribute, which is helpful in making images more responsive by retaining aspect ratio is much as possible.
 
 ### Scrum
 
