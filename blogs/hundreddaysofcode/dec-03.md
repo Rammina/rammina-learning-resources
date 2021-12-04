@@ -34,6 +34,8 @@ Thank you for reading and continuing to support me!
 
 ### Resources/Recommended Readings
 
+- [Content API | Ghost](https://ghost.org/docs/content-api/)
+- [Environment Variables | Next.js](https://nextjs.org/docs/basic-features/environment-variables)
 - [Deployment | Next.js](https://nextjs.org/docs/deployment)
 - [Scrum Master learning pathway | Scrum.org](https://www.scrum.org/pathway/scrum-master)
 - [The 2020 Scrum Guide](https://scrumguides.org/scrum-guide.html)
