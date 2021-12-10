@@ -1,24 +1,16 @@
-Hello there, everyone!
+Greetings, everyone!
 
-I'm making decent progress with designing [the Rammina company site](https://www.rammina.com/)'s blog! It's been a long time since I've enjoyed working on a project. I'm pretty happy with what I've done so far.
-
-Here is a comparison of what the page looks like earlier this morning and what it looks like now.
-
-**Before**
+Today, I made some progress on the styling of [the Rammina coding blog](https://www.rammina.com/)'s **Recent Posts** section. There are still a lot of things to improve on, but I am liking where the design is heading towards. It was fun to work on!
 
 [image here]
 
-**After**
-
-[image here]
-
-I think it's looking pretty nice, I'm excited to work on it again tomorrow! I will most likely deploy it on the weekend, regardless of its completion.
+I most likely will deploy it tomorrow or the next day.
 
 Anyway, let's move on to my daily report!
 
 ## Yesterday
 
-I finished connecting my blog's Next.js frontend with the Ghost headless CMS using Content API.
+I got a prototype design done for a specific blog page.
 
 ## Today
 
@@ -26,9 +18,9 @@ Here are the things I learned and worked on today:
 
 ### Company Blog
 
-- styled my [company page blog](https://www.rammina.com/) homepage and specific blog post page.
-- learned about `dangerouslySetInnerHTML` and utilized it to insert the blog post data inside a `<div>`.
-- discovered some really nice open-source Ghost themes, Editorial being my favorite.
+- styled my [company page blog](https://www.rammina.com/) **Recent Posts** section.
+- learned about various data objects in the Ghost Content API, such as `posts`, `pages`, and `authors`.
+- practiced Typescript non-null assertion `!` and the `as <type>` keyword.
 
 ### Scrum
 
@@ -41,8 +33,8 @@ Thank you for reading! I hope everyone's doing well.
 
 ### Resources/Recommended Readings
 
-- [10+ Free and Open-Source Ghost Themes for 2021](https://www.creative-tim.com/blog/web-design/free-open-source-ghost-themes/)
-- [dangerouslySetInnerHTML | React documentation](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml)
+- [Posts | Ghost Content API documentation](https://ghost.org/docs/content-api/#posts)
+- [Typescript 2.0 release notes](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html)
 - [The 2020 Scrum Guide](https://scrumguides.org/scrum-guide.html)
 - [Mikhail Lapshin's Scrum Quizzes](https://mlapshin.com/index.php/scrum-quizzes/)
 
