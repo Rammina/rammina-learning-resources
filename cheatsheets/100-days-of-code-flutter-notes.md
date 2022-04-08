@@ -2,7 +2,7 @@
 
 ## 1
 
-Text
+Text 
 
 The Text widget lets you create a run of styled text within your application.
 
