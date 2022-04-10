@@ -82,31 +82,31 @@ The GestureDetector widget doesn’t have a visual representation but instead de
 
 Stateless widgets receive arguments from their parent widget, which they store in final member variables. When a widget is asked to build(), it uses these stored values to derive new arguments for the widgets it creates.
 
-## 15
+## 16
 
 StatefulWidgets are special widgets that know how to generate State objects, which are then used to hold state.
 
-## 16
+## 17
 
 In Flutter, these two types of objects have different life cycles. Widgets are temporary objects, used to construct a presentation of the application in its current state. State objects, on the other hand, are persistent between calls to build(), allowing them to remember information.
 
-## 17
+## 18
 
 In Flutter, change notifications flow “up” the widget hierarchy by way of callbacks, while current state flows “down” to the stateless widgets that do presentation. The common parent that redirects this flow is the State.
 
-## 18
+## 19
 
 Responsive:
 
 Typically, a responsive app has had its layout tuned for the available screen size. Often this means (for example), re-laying out the UI if the user resizes the window, or changes the device’s orientation. This is especially necessary when the same app can run on a variety of devices, from a watch, phone, tablet, to a laptop or desktop computer.
 
-## 19
+## 20
 
 Adaptive:
 
 Adapting an app to run on different device types, such as mobile and desktop, requires dealing with mouse and keyboard input, as well as touch input. It also means there are different expectations about the app’s visual density, how component selection works (cascading menus vs bottom sheets, for example), using platform-specific features (such as top-level windows), and more.
 
-## 20
+## 21
 
 Use the LayoutBuilder class
 
