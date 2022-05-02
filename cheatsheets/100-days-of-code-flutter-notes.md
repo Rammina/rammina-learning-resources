@@ -204,3 +204,127 @@ Scroll wheel
 Scrolling widgets like ScrollView or ListView support the scroll wheel by default, and because almost every scrollable custom widget is built using one of these, it works with them as well.
 
 If you need to implement custom scroll behavior, you can use the Listener widget, which lets you customize how your UI reacts to the scroll wheel.
+
+## 32 
+
+The FavoriteWidget class manages its own state, so it overrides createState() to create a State object. The framework calls createState() when it wants to build the widget. In this example, createState() returns an instance of _FavoriteWidgetState
+
+## 33
+
+The _toggleFavorite() method, which is called when the IconButton is pressed, calls setState(). Calling setState() is critical, because this tells the framework that the widget’s state has changed and that the widget should be redrawn.
+
+## 34
+
+IconButton class
+
+A material design icon button.
+
+An icon button is a picture printed on a Material widget that reacts to touches by filling with color (ink).
+
+Icon buttons are commonly used in the AppBar.actions field, but they can be used in many other places as well.
+
+## 35
+
+GestureDetector class
+
+A widget that detects gestures.
+
+Attempts to recognize gestures that correspond to its non-null callbacks.
+
+If this widget has a child, it defers to that child for its sizing behavior. If it does not have a child, it grows to fit the parent instead.
+
+## 36
+
+Form class Null safety
+An optional container for grouping together multiple form field widgets (e.g. TextField widgets).
+
+Each individual form field should be wrapped in a FormField widget, with the Form widget as a common ancestor of all of those. Call methods on FormState to save, reset, or validate each FormField that is a descendant of this Form. To obtain the FormState, you may use Form.of with a context whose ancestor is the Form, or pass a GlobalKey to the Form constructor and call GlobalKey.currentState.
+
+## 37
+
+FormField<T> class Null safety
+A single form field.
+
+This widget maintains the current state of the form field, so that updates and validation errors are visually reflected in the UI.
+
+When used inside a Form, you can use methods on FormState to query or manipulate the form data as a whole. For example, calling FormState.save will invoke each FormField's onSaved callback in turn.
+  
+## 38
+  
+Checkbox class Null safety
+  
+A material design checkbox.
+
+The checkbox itself does not maintain any state. Instead, when the state of the checkbox changes, the widget calls the onChanged callback. Most widgets that use a checkbox will listen for the onChanged callback and rebuild the checkbox with a new value to update the visual appearance of the checkbox.
+  
+## 39
+  
+DropdownButton<T> class Null safety
+
+A material design button for selecting from a list of items.
+
+A dropdown button lets the user select from a number of items. The button shows the currently selected item as well as an arrow that opens a menu for selecting another item.
+
+The type T is the type of the value that each dropdown item represents. All the entries in a given menu must represent values with consistent types. Typically, an enum is used. Each DropdownMenuItem in items must be specialized with that same type argument.
+
+## 40
+  
+TextButton class Null safety
+  
+A Material Design "Text Button".
+
+Use text buttons on toolbars, in dialogs, or inline with other content but offset from that content with padding so that the button's presence is obvious. Text buttons do not have visible borders and must therefore rely on their position relative to other content for context. In dialogs and cards, they should be grouped together in one of the bottom corners. Avoid using text buttons where they would blend in with other content, for example in the middle of lists.
+  
+## 41
+  
+FloatingActionButton class Null safety
+  
+A material design floating action button.
+
+A floating action button is a circular icon button that hovers over content to promote a primary action in the application. Floating action buttons are most commonly used in the Scaffold.floatingActionButton field.
+
+## 42
+  
+Radio<T> class Null safety
+  
+A material design radio button.
+
+Used to select between a number of mutually exclusive values. When one radio button in a group is selected, the other radio buttons in the group cease to be selected. The values are of type T, the type parameter of the Radio class. Enums are commonly used for this purpose.
+  
+## 43 
+  
+ElevatedButton class Null safety
+  
+A Material Design "elevated button".
+
+Use elevated buttons to add dimension to otherwise mostly flat layouts, e.g. in long busy lists of content, or in wide spaces. Avoid using elevated buttons on already-elevated content such as dialogs or cards.
+
+An elevated button is a label child displayed on a Material widget whose Material.elevation increases when the button is pressed. The label's Text and Icon widgets are displayed in style's ButtonStyle.foregroundColor and the button's filled background is the ButtonStyle.backgroundColor.
+  
+## 44
+  
+Slider class Null safety
+  
+A Material Design slider.
+
+A slider can be used to select from either a continuous or a discrete set of values. The default is to use a continuous range of values from min to max. To use discrete values, use a non-null value for divisions, which indicates the number of discrete intervals.
+  
+## 45
+  
+Switch class Null safety
+  
+A material design switch.
+
+Used to toggle the on/off state of a single setting.
+
+The switch itself does not maintain any state. Instead, when the state of the switch changes, the widget calls the onChanged callback. Most widgets that use a switch will listen for the onChanged callback and rebuild the switch with a new value to update the visual appearance of the switch.
+Used to select from a range of values.
+  
+## 46
+  
+TextField class Null safety
+A material design text field.
+
+A text field lets the user enter text, either with hardware keyboard or with an onscreen keyboard.
+
+The text field calls the onChanged callback whenever the user changes the text in the field. If the user indicates that they are done typing in the field (e.g., by pressing a button on the soft keyboard), the text field calls the onSubmitted callback.
