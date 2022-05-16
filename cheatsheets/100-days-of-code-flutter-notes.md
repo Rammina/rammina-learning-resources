@@ -328,3 +328,191 @@ A material design text field.
 A text field lets the user enter text, either with hardware keyboard or with an onscreen keyboard.
 
 The text field calls the onChanged callback whenever the user changes the text in the field. If the user indicates that they are done typing in the field (e.g., by pressing a button on the soft keyboard), the text field calls the onSubmitted callback.
+  
+## 47  
+  
+AnimatedWidget class 
+  
+A widget that rebuilds when the given Listenable changes value
+  
+AnimatedWidget is most commonly used with Animation objects, which are Listenable, but it can be used with any Listenable, including ChangeNotifier and ValueNotifier.
+
+AnimatedWidget is most useful for widgets that are otherwise stateless. To use AnimatedWidget, simply subclass it and implement the build function.
+  
+## 48
+  
+The primary building block of the animation system is the Animation class. An animation represents a value of a specific type that can change over the lifetime of the animation. Most widgets that perform an animation receive an Animation object as a parameter, from which they read the current value of the animation and to which they listen for changes to that value.
+
+## 49
+  
+AnimatedBuilder class 
+A general-purpose widget for building animations.
+
+AnimatedBuilder is useful for more complex widgets that wish to include an animation as part of a larger build function. To use AnimatedBuilder, simply construct the widget and pass it a builder function.
+
+For simple cases without additional state, consider using AnimatedWidget.
+  
+## 50
+  
+Animations also provide an AnimationStatus, which indicates how the animation will evolve over time. Whenever the animation’s status changes, the animation notifies all the listeners added with addStatusListener. Typically, animations start out in the dismissed status, which means they’re at the beginning of their range.
+  
+## 51
+  
+AnimationController class 
+A controller for an animation.
+
+This class lets you perform tasks such as:
+
+Play an animation forward or in reverse, or stop an animation.
+Set the animation to a specific value.
+Define the upperBound and lowerBound values of an animation.
+Create a fling animation effect using a physics simulation.
+
+## 52
+  
+TickerProvider class
+  
+An interface implemented by classes that can vend Ticker objects.
+
+Tickers can be used by any object that wants to be notified whenever a frame triggers, but are most commonly used indirectly via an AnimationController.
+  
+## 54
+  
+WidgetTester class
+  
+Class that programmatically interacts with widgets and the test environment.
+
+For convenience, instances of this class (such as the one provided by testWidgets) can be used as the vsync for AnimationController objects.
+  
+## 55
+  
+Tween<T extends Object?> class
+A linear interpolation between a beginning and ending value.
+
+Tween is useful if you want to interpolate across a range.
+
+To use a Tween object with an animation, call the Tween object's animate method and pass it the Animation object that you want to modify.
+  
+## 56
+  
+ColorTween class
+An interpolation between two colors.
+
+This class specializes the interpolation of Tween<Color> to use Color.lerp.
+
+The values can be null, representing no color (which is distinct to transparent black, as represented by Colors.transparent).
+  
+## 57
+  
+RectTween class 
+An interpolation between two rectangles.
+
+This class specializes the interpolation of Tween<Rect> to use Rect.lerp.
+
+The values can be null, representing a zero-sized rectangle at the origin (Rect.zero).
+  
+## 58
+  
+ReverseAnimation class
+  
+An animation that is the reverse of another animation.
+
+If the parent animation is running forward from 0.0 to 1.0, this animation is running in reverse from 1.0 to 0.0.
+
+Using a ReverseAnimation is different from simply using a Tween with a begin of 1.0 and an end of 0.0 because the tween does not change the status or direction of the animation.
+  
+## 59
+  
+FlippedCurve class
+  
+A curve that is the reversed inversion of its given curve.
+
+This curve evaluates the given curve in reverse (i.e., from 1.0 to 0.0 as t increases from 0.0 to 1.0) and returns the inverse of the given curve's value (i.e., 1.0 minus the given curve's value).
+  
+## 60
+  
+SchedulerBinding mixin 
+Scheduler for running the following:
+
+Transient callbacks, triggered by the system's dart:ui.PlatformDispatcher.onBeginFrame callback, for synchronizing the application's behavior to the system's display. For example, Tickers and AnimationControllers trigger from these.
+
+Persistent callbacks, triggered by the system's dart:ui.PlatformDispatcher.onDrawFrame callback, for updating the system's display after transient callbacks have executed. For example, the rendering layer uses this to drive its rendering pipeline.
+
+Post-frame callbacks, which are run after persistent callbacks, just before returning from the dart:ui.PlatformDispatcher.onDrawFrame callback.
+
+Non-rendering tasks, to be run between frames. These are given a priority and are executed in priority order according to a schedulingStrategy.
+  
+## 61
+  
+Simulation class
+The base class for all simulations.
+
+A simulation models an object, in a one-dimensional space, on which particular forces are being applied, and exposes:
+
+The object's position, x
+The object's velocity, dx
+Whether the simulation is "done", isDone
+A simulation is generally "done" if the object has, to a given tolerance, come to a complete rest.
+  
+## 62
+  
+BouncingScrollSimulation class Null safety
+An implementation of scroll physics that matches iOS.
+ 
+ClampingScrollSimulation class Null safety
+An implementation of scroll physics that matches Android.
+  
+## 63
+  
+Animatable<T> class
+An object that can produce a value of type T given an Animation<double> as input.
+
+Typically, the values of the input animation are nominally in the range 0.0 to 1.0. In principle, however, any value could be provided.
+
+The main subclass of Animatable is Tween.
+  
+## 64
+  
+Curves
+The Curve abstract class maps doubles nominally in the range 0.0-1.0 to doubles nominally in the range 0.0-1.0.
+
+Curve classes are stateless and immutable.
+
+## 65
+ 
+Intent class 
+An abstract class representing a particular configuration of an Action.
+
+This class is what the Shortcuts.shortcuts map has as values, and is used by an ActionDispatcher to look up an action and invoke it, giving it this object to extract configuration information from.
+  
+## 66
+  
+Action<T extends Intent> class
+Base class for actions.
+
+As the name implies, an Action is an action or command to be performed. They are typically invoked as a result of a user action, such as a keyboard shortcut in a Shortcuts widget, which is used to look up an Intent, which is given to an ActionDispatcher to map the Intent to an Action and invoke it.
+
+The ActionDispatcher can invoke an Action on the primary focus, or without regard for focus.
+  
+## 67
+  
+CallbackAction<T extends Intent> class
+  
+An Action that takes a callback in order to configure it without having to create an explicit Action subclass just to call a callback.
+  
+## 68
+  
+Shortcuts 
+  
+Are key bindings that activate by pressing a key or combination of keys. The key combinations reside in a table with their bound intent. When the Shortcuts widget invokes them, it sends their matching intent to the actions subsystem for fulfillment.
+  
+## 69
+  
+Flutter has an ActivateIntent widget that maps each type of control to its corresponding version of an ActivateAction (and that executes the code that activates the control). This code often needs fairly private access to do its work.
+  
+## 70
+  
+CallbackShortcuts class
+A widget that provides an uncomplicated mechanism for binding a key combination to a specific callback.
+
+This is similar to the functionality provided by the Shortcuts widget, but instead of requiring a mapping to an Intent, and an Actions widget somewhere in the widget tree to bind the Intent to, it just takes a set of bindings that bind the key combination directly to a VoidCallback.
