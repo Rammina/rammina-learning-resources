@@ -516,3 +516,171 @@ CallbackShortcuts class
 A widget that provides an uncomplicated mechanism for binding a key combination to a specific callback.
 
 This is similar to the functionality provided by the Shortcuts widget, but instead of requiring a mapping to an Intent, and an Actions widget somewhere in the widget tree to bind the Intent to, it just takes a set of bindings that bind the key combination directly to a VoidCallback.
+
+## 71
+  
+Ephemeral state (sometimes called UI state or local state) is the state you can neatly contain in a single widget.
+
+This is, intentionally, a vague definition, so here are a few examples.
+
+current page in a PageView
+current progress of a complex animation
+current selected tab in a BottomNavigationBar
+Other parts of the widget tree seldom need to access this kind of state. There is no need to serialize it, and it doesn’t change in complex ways.
+  
+## 72
+  
+App state
+State that is not ephemeral, that you want to share across many parts of your app, and that you want to keep between user sessions, is what we call application state (sometimes also called shared state).
+
+Examples of application state:
+
+User preferences
+Login info
+Notifications in a social networking app
+The shopping cart in an e-commerce app
+Read/unread state of articles in a news app
+For managing app state, you’ll want to research your options. Your choice depends on the complexity and nature of your app, your team’s previous experience, and many other aspects.
+  
+## 73
+  
+ChangeNotifier is a simple class included in the Flutter SDK which provides change notification to its listeners. In other words, if something is a ChangeNotifier, you can subscribe to its changes. (It is a form of Observable, for those familiar with the term.)
+  
+## 74
+  
+ChangeNotifierProvider is the widget that provides an instance of a ChangeNotifier to its descendants. It comes from the provider package.
+  
+## 75
+  
+By default, Flutter only provides US English localizations. To add support for other languages, an application must specify additional MaterialApp (or CupertinoApp) properties, and include a package called flutter_localizations.
+  
+## 76
+  
+scriptCode property
+  
+The script subtag of the Locale Identifier, null if absent.
+
+It is syntactically valid and normalized (has correct case), but not necessarily valid (the script might not exist) because the list of valid scripts changes with time.
+  
+## 77
+  
+Locale class
+  
+An identifier used to select a user's language and formatting preferences.
+
+This represents a Unicode Language Identifier (i.e. without Locale extensions), except variants are not supported.
+
+Locales are canonicalized according to the "preferred value" entries in the IANA Language Subtag Registry. For example, const Locale('he') and const Locale('iw') are equal and both have the languageCode he, because iw is a deprecated language subtag that was replaced by the subtag he.
+  
+## 78
+  
+GlobalWidgetsLocalizations class
+  
+Localized values for widgets.
+
+Currently this class just maps locale to textDirection. All locales are TextDirection.ltr except for locales with the following Locale.languageCode values, which are TextDirection.rtl:
+
+ar - Arabic
+fa - Farsi
+he - Hebrew
+ps - Pashto
+sd - Sindhi
+ur - Urdu
+  
+## 79
+  
+supportedLocales property
+  
+The list of locales that this app has been localized for.
+
+By default only the American English locale is supported. Apps should configure this list to match the locales they support.
+
+This list must not null. Its default value is just [const Locale('en', 'US')].
+  
+## 80
+  
+LocaleResolutionCallback typedef
+  
+The signature of WidgetsApp.localeResolutionCallback.
+
+It is recommended to provide a LocaleListResolutionCallback instead of a LocaleResolutionCallback when possible, as LocaleResolutionCallback only receives a subset of the information provided in LocaleListResolutionCallback.
+
+A LocaleResolutionCallback is responsible for computing the locale of the app's Localizations object when the app starts and when user changes the default locale for the device after LocaleListResolutionCallback fails or is not provided.
+  
+## 81
+  
+GlobalMaterialLocalizations class
+  
+Implementation of localized strings for the material widgets using the intl package for date and time formatting.
+  
+## 82
+  
+dart:convert library
+  
+Encoders and decoders for converting between different data representations, including JSON and UTF-8.
+
+In addition to converters for common data representations, this library provides support for implementing converters in a way which makes them easy to chain and to use with streams.
+  
+## 83
+  
+Flutter supports using shared packages contributed by other developers to the Flutter and Dart ecosystems. This allows quickly building an app without having to develop everything from scratch.
+ 
+## 84
+  
+Packages
+  
+At a minimum, a Dart package is a directory containing a pubspec file. Additionally, a package can contain dependencies (listed in the pubspec), Dart libraries, apps, resources, tests, images, and examples.
+  
+## 85
+  
+Federated plugins
+  
+Federated plugins are a way of splitting support for different platforms into separate packages. So, a federated plugin can use one package for iOS, another for Android, another for web, and yet another for a car (as an example of an IoT device).
+  
+## 86
+  
+Package versions
+  
+All packages have a version number, specified in the package’s pubspec.yaml file. The current version of a package is displayed next to its name (for example, see the url_launcher package), as well as a list of all prior versions (see url_launcher versions).
+  
+## 87
+ 
+Updating package dependencies
+  
+When running flutter pub get (Packages get in IntelliJ or Android Studio) for the first time after adding a package, Flutter saves the concrete package version found in the pubspec.lock lockfile. This ensures that you get the same version again if you, or another developer on your team, run flutter pub get.
+  
+## 88
+  
+To upgrade to a new version of the package, for example to use new features in that package, run flutter pub upgrade (Upgrade dependencies in IntelliJ or Android Studio) to retrieve the highest available version of the package that is allowed by the version constraint specified in pubspec.yaml.
+  
+## 89
+  
+Dependencies on unpublished packages
+  
+Packages can be used even when not published on pub.dev. For private plugins, or for packages not ready for publishing, additional dependency options are available
+  
+## 90
+  
+Path dependency
+  
+A Flutter app can depend on a plugin via a file system path: dependency. The path can be either relative or absolute. Relative paths are evaluated relative to the directory containing pubspec.yaml.
+  
+## 91
+  
+## 92
+  
+## 93
+  
+## 94  
+  
+## 95
+  
+## 96
+  
+## 97
+  
+## 98
+  
+## 99
+  
+## 100
