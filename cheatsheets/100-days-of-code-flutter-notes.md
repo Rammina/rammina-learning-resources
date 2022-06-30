@@ -667,15 +667,49 @@ A Flutter app can depend on a plugin via a file system path: dependency. The pat
   
 ## 91
   
+If you are exclusively writing Flutter apps with Dart code and not using platform-specific libraries, or otherwise accessing platform-specific features, you can debug your code using your IDE’s debugger. 
+  
 ## 92
+  
+If you’re writing a platform-specific plugin or using platform-specific libraries written in Swift, ObjectiveC, Java, or Kotlin, you can debug that portion of your code using Xcode (for iOS) or Android Gradle (for Android).
   
 ## 93
   
+Flutter inspector
+  
+There are two other features provided by the Flutter plugin that you might find useful. The Flutter inspector is a tool for visualizing and exploring the Flutter widget tree and helps you:
+
+Understand existing layouts
+Diagnose layout issues
+  
 ## 94  
+  
+Flutter outline
+  
+The Flutter Outline displays the build method in visual form. Note that this might be different than the widget tree for the build method. Toggle display of the outline using the vertical button to the right of the AS window.
   
 ## 95
   
+Debug
+In debug mode, the app is set up for debugging on the physical device, emulator, or simulator.
+
+Debug mode for mobile apps mean that:
+
+Assertions are enabled.
+Service extensions are enabled.
+Compilation is optimized for fast development and run cycles (but not for execution speed, binary size, or deployment).
+Debugging is enabled, and tools supporting source level debugging (such as DevTools) can connect to the process.
+  
 ## 96
+  
+Release
+Use release mode for deploying the app, when you want maximum optimization and minimal footprint size. For mobile, release mode (which is not supported on the simulator or emulator), means that:
+
+Assertions are disabled.
+Debugging information is stripped out.
+Debugging is disabled.
+Compilation is optimized for fast startup, fast execution, and small package sizes.
+Service extensions are disabled.
   
 ## 97
   
