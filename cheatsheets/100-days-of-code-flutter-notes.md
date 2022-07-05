@@ -713,7 +713,20 @@ Service extensions are disabled.
   
 ## 97
   
+DevTools is a suite of performance and debugging tools for Dart and Flutter.
+  
 ## 98
+  
+Here are some of the things you can do with DevTools:
+
+Inspect the UI layout and state of a Flutter app.
+Diagnose UI jank performance issues in a Flutter app.
+CPU profiling for a Flutter or Dart app.
+Network profiling for a Flutter app.
+Source-level debugging of a Flutter or Dart app.
+Debug memory issues in a Flutter or Dart command-line app.
+View general log and diagnostics information about a running Flutter or Dart command-line app.
+Analyze code and app size.
   
 ## 99
   
