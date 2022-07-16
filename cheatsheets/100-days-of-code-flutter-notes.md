@@ -724,51 +724,75 @@ When the Shortcuts widget invokes them, it sends their matching intent to the ac
  
 ## 69
   
-Flutter has an ActivateIntent widget that maps each type of control to its corresponding version of an ActivateAction (and that executes the code that activates the control). This code often needs fairly private access to do its work.
+Flutter has an ActivateIntent widget that maps each type of control to its corresponding version of an ActivateAction (and that executes the code that activates the control). 
+  
+![FUwryUsUsAAiD5P](https://user-images.githubusercontent.com/49326578/179342539-de7994e8-5151-4d54-8d7b-fd257ad67acc.jpg)
+
+This code often needs fairly private access to do its work.
   
 ## 70
   
 CallbackShortcuts class
-A widget that provides an uncomplicated mechanism for binding a key combination to a specific callback.
 
-This is similar to the functionality provided by the Shortcuts widget, but instead of requiring a mapping to an Intent, and an Actions widget somewhere in the widget tree to bind the Intent to, it just takes a set of bindings that bind the key combination directly to a VoidCallback.
+You can use the CallbackShortcuts class which is a widget that provides an uncomplicated mechanism for binding a key combination to a specific callback.
+  
+![FU12_ymVIAACKic](https://user-images.githubusercontent.com/49326578/179342556-92389259-678b-48e1-ab8e-47dde8fa5c34.jpg)
+
+It's similar to the functionality provided by the Shortcuts widget, but instead of requiring a mapping to an Intent, and an Actions widget somewhere in the widget tree to bind the Intent to, it just takes a set of bindings that bind the key combination directly to a VoidCallback.
 
 ## 71
   
 Ephemeral state (sometimes called UI state or local state) is the state you can neatly contain in a single widget.
 
-This is, intentionally, a vague definition, so here are a few examples.
+Other parts of the widget tree seldom need to access this kind of state.
+  
+![FU7wLekUUAA8IEs](https://user-images.githubusercontent.com/49326578/179342573-5b6fa319-c455-4ec5-9b4b-63452b7f4280.png)
 
-current page in a PageView
-current progress of a complex animation
-current selected tab in a BottomNavigationBar
-Other parts of the widget tree seldom need to access this kind of state. There is no need to serialize it, and it doesn’t change in complex ways.
+There is no need to serialize it, and it doesn’t change in complex ways.
   
 ## 72
   
 App state
-State that is not ephemeral, that you want to share across many parts of your app, and that you want to keep between user sessions, is what we call application state (sometimes also called shared state).
+
+Use App state (shared state) to handle state that is not ephemeral, that you want to share across many parts of your app, and that you want to keep between user sessions.
+  
+![FVAlcMlVEAAJv_G](https://user-images.githubusercontent.com/49326578/179342593-9e2cf26e-ac20-4ead-a937-8e3dd41e57fa.png)
 
 Examples of application state:
 
-User preferences
-Login info
-Notifications in a social networking app
-The shopping cart in an e-commerce app
-Read/unread state of articles in a news app
-For managing app state, you’ll want to research your options. Your choice depends on the complexity and nature of your app, your team’s previous experience, and many other aspects.
+- User preferences 
+- Login info 
+- Notifications in a social networking app 
+- The shopping cart in an e-commerce app 
+- Read/unread state of articles in a news app 
+
+For managing app state, you’ll want to research your options.
+  
+Your choice depends on the complexity and nature of your app, your team’s previous experience, and many other aspects.
   
 ## 73
   
-ChangeNotifier is a simple class included in the Flutter SDK which provides change notification to its listeners. In other words, if something is a ChangeNotifier, you can subscribe to its changes. (It is a form of Observable, for those familiar with the term.)
+ChangeNotifier is a simple class included in the Flutter SDK which provides change notification to its listeners.
+
+In other words, if something is a ChangeNotifier, you can subscribe to its changes.
+  
+![FVFh179VEAAGWMJ](https://user-images.githubusercontent.com/49326578/179342606-23bab5e2-fc7e-4c83-bd13-17de7a16b79c.jpg)
+  
+(It is a form of Observable, for those familiar with the term.)
   
 ## 74
   
 ChangeNotifierProvider is the widget that provides an instance of a ChangeNotifier to its descendants. It comes from the provider package.
   
+![FVK-VYwVUAANjwk](https://user-images.githubusercontent.com/49326578/179342626-531c5385-0a90-430f-807c-16c2e070f653.png)
+
 ## 75
   
-By default, Flutter only provides US English localizations. To add support for other languages, an application must specify additional MaterialApp (or CupertinoApp) properties, and include a package called flutter_localizations.
+By default, Flutter only provides US English localizations. 
+
+To add other languages, an application must specify additional MaterialApp properties, and include a package called flutter_localizations.
+  
+![FVP2i-EUAAIIwIG](https://user-images.githubusercontent.com/49326578/179342644-a8935f2d-1eb0-4b21-b22f-2138e474e9b2.jpg) 
   
 ## 76
   
@@ -782,122 +806,148 @@ It is syntactically valid and normalized (has correct case), but not necessarily
   
 Locale class
   
-An identifier used to select a user's language and formatting preferences.
+Use the Locale class which is an identifier used to select a user's language and formatting preferences.
 
-This represents a Unicode Language Identifier (i.e. without Locale extensions), except variants are not supported.
+This represents a Unicode Language Identifier (i.e. without Locale extensions).
+  
+![FVWEmZhUEAIarvW](https://user-images.githubusercontent.com/49326578/179342663-c07b3659-93de-4219-9bf2-bbf8b3e5f908.png)
 
-Locales are canonicalized according to the "preferred value" entries in the IANA Language Subtag Registry. For example, const Locale('he') and const Locale('iw') are equal and both have the languageCode he, because iw is a deprecated language subtag that was replaced by the subtag he.
+Locales are canonicalized according to the "preferred value" entries in the IANA Language Subtag Registry. 
+
+For example, const Locale('he') and const Locale('iw') are equal and both have the languageCode he.
   
 ## 78
   
 GlobalWidgetsLocalizations class
   
-Localized values for widgets.
-
-Currently this class just maps locale to textDirection. All locales are TextDirection.ltr except for locales with the following Locale.languageCode values, which are TextDirection.rtl:
-
-ar - Arabic
-fa - Farsi
-he - Hebrew
-ps - Pashto
-sd - Sindhi
-ur - Urdu
+The GlobalWidgetsLocalizations class maps locale to textDirection. All locales are TextDirection.ltr except for locales with the following Locale.languageCode values, which are TextDirection.rtl.
   
+![FVdGKkaUcAAELUp](https://user-images.githubusercontent.com/49326578/179342681-265083e8-5d56-40dc-b79a-b9856dfbbf5f.png)
+
 ## 79
   
 supportedLocales property
   
-The list of locales that this app has been localized for.
+The supportedLocales property contains the list of locales that an app has been localized for
 
-By default only the American English locale is supported. Apps should configure this list to match the locales they support.
-
-This list must not null. Its default value is just [const Locale('en', 'US')].
+By default, only the American English locale is supported. Configure it to match the locales to support
   
+![FVf617VVIAQt8oF](https://user-images.githubusercontent.com/49326578/179342690-a29a85e2-464b-4f2b-a014-451aad20c7f8.png)
+
 ## 80
   
 LocaleResolutionCallback typedef
   
-The signature of WidgetsApp.localeResolutionCallback.
+A LocaleResolutionCallback computes the locale of the app's Localizations object on app start and when user changes the default locale for the device after LocaleListResolutionCallback fails.
+  
+![FVlr-xuVsAA57Fp](https://user-images.githubusercontent.com/49326578/179342705-d03c0aec-e10a-4013-8e72-e8d39a87fa88.jpg)
 
 It is recommended to provide a LocaleListResolutionCallback instead of a LocaleResolutionCallback when possible, as LocaleResolutionCallback only receives a subset of the information provided in LocaleListResolutionCallback.
-
-A LocaleResolutionCallback is responsible for computing the locale of the app's Localizations object when the app starts and when user changes the default locale for the device after LocaleListResolutionCallback fails or is not provided.
   
 ## 81
   
 GlobalMaterialLocalizations class
   
-Implementation of localized strings for the material widgets using the intl package for date and time formatting.
+Use the GlobalMaterialLocalizations class for implementing localized strings for the material widgets using the intl package for date and time formatting.
+  
+![FVqI0pbVsAAx7cO](https://user-images.githubusercontent.com/49326578/179342727-f4fa5d7f-d81e-4326-b2de-a278a6210873.jpg)
   
 ## 82
   
 dart:convert library
   
-Encoders and decoders for converting between different data representations, including JSON and UTF-8.
+The dart:convert library contains encoders and decoders for converting between different data representations, including JSON and UTF-8.
+  
+![FVumavOVEAAIQre](https://user-images.githubusercontent.com/49326578/179342749-35d446a9-2a9f-4089-a9b4-645b579a543c.png)
 
 In addition to converters for common data representations, this library provides support for implementing converters in a way which makes them easy to chain and to use with streams.
   
 ## 83
   
-Flutter supports using shared packages contributed by other developers to the Flutter and Dart ecosystems. This allows quickly building an app without having to develop everything from scratch.
+The Flutter open-source community is rapidly growing!
+
+Flutter supports using shared packages contributed by other developers to the Flutter and Dart ecosystems. 
+  
+![FV0Bc8OUcAAEVCa](https://user-images.githubusercontent.com/49326578/179342780-d103ef05-fbde-49c3-a870-e665f0ffda77.jpg)
+
+This allows quickly building an app without having to develop everything from scratch.
  
 ## 84
   
 Packages
   
-At a minimum, a Dart package is a directory containing a pubspec file. Additionally, a package can contain dependencies (listed in the pubspec), Dart libraries, apps, resources, tests, images, and examples.
+A Dart package is a directory containing a pubspec file. Additionally, a package can contain dependencies (listed in the pubspec), Dart libraries, apps, resources, tests, images, and examples.
+  
+![FV6UCC_UEAE7b90](https://user-images.githubusercontent.com/49326578/179342801-b7773931-c0b5-43c7-b5f1-ad59c8220862.jpg)
   
 ## 85
   
 Federated plugins
   
-Federated plugins are a way of splitting support for different platforms into separate packages. So, a federated plugin can use one package for iOS, another for Android, another for web, and yet another for a car (as an example of an IoT device).
+Use federated plugins to split support for different platforms into separate packages. 
+
+A federated plugin can use one package for iOS, another for Android, another for web, and even IoT.
   
+![FV_T1bjUcAIVQhn](https://user-images.githubusercontent.com/49326578/179342832-f3acda99-27a4-4fcb-99b1-440590516d44.jpg)
+
 ## 86
-  
+    
 Package versions
   
-All packages have a version number, specified in the package’s pubspec.yaml file. The current version of a package is displayed next to its name (for example, see the url_launcher package), as well as a list of all prior versions (see url_launcher versions).
+All Dart packages have a version number, specified in the package’s pubspec.yaml file. The current version of a package is displayed next to its name, as well as a list of all prior versions.
+  
+![FWD9GmOUsAA11-c](https://user-images.githubusercontent.com/49326578/179342853-549f44af-20c3-4895-8df3-dd3e9b590eee.png)
   
 ## 87
  
 Updating package dependencies
   
-When running flutter pub get (Packages get in IntelliJ or Android Studio) for the first time after adding a package, Flutter saves the concrete package version found in the pubspec.lock lockfile. This ensures that you get the same version again if you, or another developer on your team, run flutter pub get.
+When running `flutter pub get` the first time after adding a package, Flutter saves the concrete package version found in the pubspec.lock lockfile. This ensures that you get the same version again.
   
+![FWJtx2bVsAA66u7](https://user-images.githubusercontent.com/49326578/179342908-4db66283-aadb-4651-9cf2-eed023dcdafe.png)
+
 ## 88
   
-To upgrade to a new version of the package, for example to use new features in that package, run flutter pub upgrade (Upgrade dependencies in IntelliJ or Android Studio) to retrieve the highest available version of the package that is allowed by the version constraint specified in pubspec.yaml.
+To upgrade to a new version of the package, run flutter pub upgrade to retrieve the highest available version of the package that is allowed by the version constraint specified in pubspec.yaml.
   
+![FWO2tODUAAMjrv0](https://user-images.githubusercontent.com/49326578/179342921-84c68428-faaf-445e-a518-7dc9788c94f4.jpg)
+
 ## 89
   
 Dependencies on unpublished packages
-  
-Packages can be used even when not published on pub.dev. For private plugins, or for packages not ready for publishing, additional dependency options are available
+
+Packages can be used even when not published on http://pub.dev. For private plugins, additional dependency options are available
+
+![FWVQ9qdVUAEXvsx](https://user-images.githubusercontent.com/49326578/179342942-7590519b-c35e-4097-9f4c-31e60e16237e.png)
   
 ## 90
   
 Path dependency
+
+A Flutter app can depend on a plugin via a file system path: dependency. The path can be either relative or absolute.
   
-A Flutter app can depend on a plugin via a file system path: dependency. The path can be either relative or absolute. Relative paths are evaluated relative to the directory containing pubspec.yaml.
-  
+![FWYewHiUUAAEKUu](https://user-images.githubusercontent.com/49326578/179342951-4877b96c-8cfe-4ea9-9334-39a6d20c3550.png)
+
 ## 91
   
-If you are exclusively writing Flutter apps with Dart code and not using platform-specific libraries, or otherwise accessing platform-specific features, you can debug your code using your IDE’s debugger. 
+If you are exclusively writing Flutter apps with Dart code and not using platform-specific libraries, or accessing platform-specific features, you can debug your code using your IDE’s debugger. 
   
+![FWfGic4VEAA1zOb](https://user-images.githubusercontent.com/49326578/179342962-9d4bb085-6843-4f1a-8735-7ea8c54e0d5b.png)
+
 ## 92
   
-If you’re writing a platform-specific plugin or using platform-specific libraries written in Swift, ObjectiveC, Java, or Kotlin, you can debug that portion of your code using Xcode (for iOS) or Android Gradle (for Android).
+If you’re writing a platform-specific plugin or using platform-specific libraries written in Swift, ObjectiveC, Java, or Kotlin, you can debug that portion of your code using Xcode or Android Gradle.
   
+![FWiKzULVUAAucd9](https://user-images.githubusercontent.com/49326578/179342969-3ef0a04c-03ae-4403-a3fa-1415bbd36c05.png)
+
 ## 93
   
 Flutter inspector
-  
-There are two other features provided by the Flutter plugin that you might find useful. The Flutter inspector is a tool for visualizing and exploring the Flutter widget tree and helps you:
 
-Understand existing layouts
-Diagnose layout issues
+There are two other features provided by the Flutter plugin that you might find useful. The Flutter inspector is a tool for visualizing and exploring the Flutter widget tree.
   
+![FWnkL25VQAA6R5s](https://user-images.githubusercontent.com/49326578/179342977-65d98983-314b-4051-ab5d-ac438657cd12.jpg)
+
 ## 94  
   
 Flutter outline
@@ -907,42 +957,53 @@ The Flutter Outline displays the build method in visual form. Note that this mig
 ## 95
   
 Debug
-In debug mode, the app is set up for debugging on the physical device, emulator, or simulator.
 
 Debug mode for mobile apps mean that:
 
-Assertions are enabled.
-Service extensions are enabled.
-Compilation is optimized for fast development and run cycles (but not for execution speed, binary size, or deployment).
-Debugging is enabled, and tools supporting source level debugging (such as DevTools) can connect to the process.
+- Assertions are enabled. 
+- Service extensions are enabled. 
+- Compilation is optimized for fast development and run cycles. 
+- Source-level Debugging is enabled.
   
+<img width="233" alt="FWs3HmXUIAEClOY" src="https://user-images.githubusercontent.com/49326578/179342988-14b7ceab-e00d-461c-bd71-ee63a4f38f07.png">
+
 ## 96
   
 Release
-Use release mode for deploying the app, when you want maximum optimization and minimal footprint size. For mobile, release mode (which is not supported on the simulator or emulator), means that:
 
-Assertions are disabled.
-Debugging information is stripped out.
-Debugging is disabled.
-Compilation is optimized for fast startup, fast execution, and small package sizes.
-Service extensions are disabled.
+Use release mode for deploying the app, when you want maximum optimization and minimal footprint size.
+  
+![FWx-0c0UEAAMq9G](https://user-images.githubusercontent.com/49326578/179342999-487ae848-cc77-459f-acba-568bdb6b1c42.jpg)
+
+For mobile, release mode, means that:
+
+- Assertions are disabled. 
+- Debugging information is stripped out. 
+- Debugging is disabled. 
+- Compilation is optimized for fast startup, fast execution, and small package sizes. 
+- Service extensions are disabled.
   
 ## 97
   
-DevTools is a suite of performance and debugging tools for Dart and Flutter.
-  
-## 98
+DevTools 
   
 Here are some of the things you can do with DevTools:
 
-Inspect the UI layout and state of a Flutter app.
-Diagnose UI jank performance issues in a Flutter app.
-CPU profiling for a Flutter or Dart app.
-Network profiling for a Flutter app.
-Source-level debugging of a Flutter or Dart app.
-Debug memory issues in a Flutter or Dart command-line app.
-View general log and diagnostics information about a running Flutter or Dart command-line app.
-Analyze code and app size.
+- Inspect the UI layout and state.
+- Diagnose UI jank performance issues. 
+- CPU profiling. 
+- Network profiling. 
+- Source-level debugging.
+  
+![FW5GGSBUcAEk3QL](https://user-images.githubusercontent.com/49326578/179343020-c58887e7-3b1f-48c4-9498-c6927bb0f45d.jpg)
+
+More things you can do with DevTools:
+
+- Debug memory issues.
+- View general log and diagnostics information about a running Flutter or Dart command-line app. 
+- Analyze code and app size.
+  
+## 98
   
 ## 99
   
