@@ -6,6 +6,10 @@ Text
 
 The Text widget lets you create a run of styled text within your application.
 
+Also, newlines can be done with either using triple quotes or single quotes.
+
+![FOdCt7-VgAQ53hM](https://user-images.githubusercontent.com/49326578/179341284-6a5c43ee-6529-47e3-856d-e542344234a2.png)
+
 ## 2
 
 Row, Column
