@@ -491,101 +491,137 @@ If the user indicates that they are done typing in the field (e.g., by pressing 
   
 AnimatedWidget class 
   
-A widget that rebuilds when the given Listenable changes value
+Use the AnimatedWidget class for Animation objects, which are Listenable, but it can be used with any Listenable, including ChangeNotifier and ValueNotifier.
   
-AnimatedWidget is most commonly used with Animation objects, which are Listenable, but it can be used with any Listenable, including ChangeNotifier and ValueNotifier.
-
-AnimatedWidget is most useful for widgets that are otherwise stateless. To use AnimatedWidget, simply subclass it and implement the build function.
+https://twitter.com/i/status/1526683349917437952
   
 ## 48
   
-The primary building block of the animation system is the Animation class. An animation represents a value of a specific type that can change over the lifetime of the animation. Most widgets that perform an animation receive an Animation object as a parameter, from which they read the current value of the animation and to which they listen for changes to that value.
+AnimatedBuilder class 
+
+The primary building block of the animation system is the Animation class.
+
+An animation represents a value of a specific type that can change over the lifetime of the animation. 
+  
+https://twitter.com/i/status/1527032102402723841
+  
+Most widgets that perform an animation receive an Animation object as a parameter, from which they read the current value of the animation and to which they listen for changes to that value.
 
 ## 49
   
-AnimatedBuilder class 
-A general-purpose widget for building animations.
+Use the AnimatedBuilder class for building animations.
 
-AnimatedBuilder is useful for more complex widgets that wish to include an animation as part of a larger build function. To use AnimatedBuilder, simply construct the widget and pass it a builder function.
+AnimatedBuilder is general purpose & is useful for more complex widgets that wish to include an animation as part of a larger build function.
+  
+https://twitter.com/i/status/1527413363529203713
+  
+To use AnimatedBuilder, simply construct the widget and pass it a builder function.
 
 For simple cases without additional state, consider using AnimatedWidget.
   
 ## 50
   
-Animations also provide an AnimationStatus, which indicates how the animation will evolve over time. Whenever the animation’s status changes, the animation notifies all the listeners added with addStatusListener. Typically, animations start out in the dismissed status, which means they’re at the beginning of their range.
+Animations also provide an AnimationStatus, which tells you the status of the animation over time. When the animation’s status changes, the animation notifies the listeners added with addStatusListener.
+  
+https://twitter.com/i/status/1527813721216516096
+  
+Typically, animations start out in the dismissed status, which means they’re at the beginning of their range.
   
 ## 51
   
 AnimationController class 
-A controller for an animation.
 
-This class lets you perform tasks such as:
+Use the AnimationController class to perform tasks such as:
 
-Play an animation forward or in reverse, or stop an animation.
-Set the animation to a specific value.
-Define the upperBound and lowerBound values of an animation.
-Create a fling animation effect using a physics simulation.
+- Play an animation forward or in reverse
+- Stop an animation. 
+- Set the animation to a specific value.
+  
+https://twitter.com/i/status/1528246729849524224
+  
+- Define the upperBound and lowerBound values of an animation.
 
+You can even create a fling animation effect using a physics simulation!
+  
 ## 52
   
 TickerProvider class
-  
-An interface implemented by classes that can vend Ticker objects.
 
-Tickers can be used by any object that wants to be notified whenever a frame triggers, but are most commonly used indirectly via an AnimationController.
+The TickerProvider class which can vend Ticker objects.
+
+Tickers can be used by objects that want to be notified whenever a frame triggers, but most used indirectly via an AnimationController.
+  
+https://twitter.com/i/status/1528535415967211520
   
 ## 54
   
 WidgetTester class
   
-Class that programmatically interacts with widgets and the test environment.
-
+Use the WidgetTester class to programmatically interact with widgets and the test environment.
+  
+https://twitter.com/i/status/1528909328786149376
+  
 For convenience, instances of this class (such as the one provided by testWidgets) can be used as the vsync for AnimationController objects.
   
 ## 55
   
 Tween<T extends Object?> class
-A linear interpolation between a beginning and ending value.
+
+The Tween<T extends Object?> class is a linear interpolation between a beginning and ending value.
 
 Tween is useful if you want to interpolate across a range.
-
+  
+https://twitter.com/i/status/1529267139009339392
+  
 To use a Tween object with an animation, call the Tween object's animate method and pass it the Animation object that you want to modify.
   
 ## 56
   
 ColorTween class
-An interpolation between two colors.
 
-This class specializes the interpolation of Tween<Color> to use Color.lerp.
+The ColorTween class is an interpolation between two colors.
 
+This class specializes the interpolation of Tween to use Color.lerp.
+  
+https://twitter.com/i/status/1529742674374164480
+  
 The values can be null, representing no color (which is distinct to transparent black, as represented by Colors.transparent).
   
 ## 57
   
 RectTween class 
-An interpolation between two rectangles.
 
-This class specializes the interpolation of Tween<Rect> to use Rect.lerp.
+Use the RectTween class to specialize the interpolation of Tween to use Rect.lerp.
 
-The values can be null, representing a zero-sized rectangle at the origin (Rect.zero).
+RectTween is an interpolation between two rectangles.
+  
+https://twitter.com/i/status/1529985110283386880
+  
+The values can be null, representing a zero-sized rectangle at the origin (http://Rect.zero).
   
 ## 58
   
 ReverseAnimation class
   
+ReverseAnimation class
+
 An animation that is the reverse of another animation.
 
 If the parent animation is running forward from 0.0 to 1.0, this animation is running in reverse from 1.0 to 0.0.
-
+  
+https://twitter.com/i/status/1530393263307255808
+  
 Using a ReverseAnimation is different from simply using a Tween with a begin of 1.0 and an end of 0.0 because the tween does not change the status or direction of the animation.
   
 ## 59
   
 FlippedCurve class
   
-A curve that is the reversed inversion of its given curve.
-
-This curve evaluates the given curve in reverse (i.e., from 1.0 to 0.0 as t increases from 0.0 to 1.0) and returns the inverse of the given curve's value (i.e., 1.0 minus the given curve's value).
+Use the FlippedCurve class which is a curve that is the reversed inversion of its given curve.
+  
+https://twitter.com/i/status/1530709213017542657
+  
+This curve evaluates the given curve in reverse (i.e., from 1.0 to 0.0 as t increases from 0.0 to 1.0) and returns the inverse of the given curve's value (i.e., 1.0 minus the given curve's value
   
 ## 60
   
@@ -603,28 +639,37 @@ Non-rendering tasks, to be run between frames. These are given a priority and ar
 ## 61
   
 Simulation class
-The base class for all simulations.
 
-A simulation models an object, in a one-dimensional space, on which particular forces are being applied, and exposes:
+The Simulation class is the base class for all simulations.
 
-The object's position, x
-The object's velocity, dx
-Whether the simulation is "done", isDone
-A simulation is generally "done" if the object has, to a given tolerance, come to a complete rest.
+A simulation models an object, in a one-dimensional space, on which particular forces are being applied, and exposes some properties.
+  
+https://twitter.com/i/status/1531044183028293632
+  
+The object's position, x The object's velocity, dx Whether the simulation is "done", isDone A simulation is generally "done" if the object has, to a given tolerance, come to a complete rest.
   
 ## 62
   
-BouncingScrollSimulation class Null safety
-An implementation of scroll physics that matches iOS.
+BouncingScrollSimulation class
+
+Use the BouncingScrollSimulation class for an implementation of scroll physics that matches iOS.
+  
+https://twitter.com/i/status/1531413053077483520
  
-ClampingScrollSimulation class Null safety
-An implementation of scroll physics that matches Android.
+ClampingScrollSimulation class
+
+Use the ClampingScrollSimulation class for an implementation of scroll physics that matches Android.
+  
+https://twitter.com/i/status/1531799911431143424
   
 ## 63
   
 Animatable<T> class
-An object that can produce a value of type T given an Animation<double> as input.
 
+Use the Animatable class to create an object that can produce a value of type T given an Animation as input.
+
+https://twitter.com/i/status/1532167705406472192
+ 
 Typically, the values of the input animation are nominally in the range 0.0 to 1.0. In principle, however, any value could be provided.
 
 The main subclass of Animatable is Tween.
@@ -632,38 +677,51 @@ The main subclass of Animatable is Tween.
 ## 64
   
 Curves
+
 The Curve abstract class maps doubles nominally in the range 0.0-1.0 to doubles nominally in the range 0.0-1.0.
 
 Curve classes are stateless and immutable.
+  
+https://twitter.com/i/status/1532530180668854274
 
 ## 65
  
 Intent class 
-An abstract class representing a particular configuration of an Action.
 
+Intent class is an abstract class representing a particular configuration of an Action.
+
+https://twitter.com/i/status/1533029371014832128
+  
 This class is what the Shortcuts.shortcuts map has as values, and is used by an ActionDispatcher to look up an action and invoke it, giving it this object to extract configuration information from.
   
 ## 66
   
 Action<T extends Intent> class
-Base class for actions.
 
-As the name implies, an Action is an action or command to be performed. They are typically invoked as a result of a user action, such as a keyboard shortcut in a Shortcuts widget, which is used to look up an Intent, which is given to an ActionDispatcher to map the Intent to an Action and invoke it.
+Use the Action class is an action or command to be performed. 
 
-The ActionDispatcher can invoke an Action on the primary focus, or without regard for focus.
+They are typically invoked as a result of a user action, such as a keyboard shortcut in a Shortcuts widget.
+  
+https://twitter.com/i/status/1533246772843204608
   
 ## 67
   
 CallbackAction<T extends Intent> class
   
-An Action that takes a callback in order to configure it without having to create an explicit Action subclass just to call a callback.
+Use the CallbackAction class to create an Action that takes a callback in order to configure it without having to create an explicit Action subclass just to call a callback.
+  
+![FUiQOT3UEAAAXZB](https://user-images.githubusercontent.com/49326578/179342503-d6b2280c-392b-4251-bb0c-207f9ac6877c.jpg)
   
 ## 68
   
 Shortcuts 
   
-Are key bindings that activate by pressing a key or combination of keys. The key combinations reside in a table with their bound intent. When the Shortcuts widget invokes them, it sends their matching intent to the actions subsystem for fulfillment.
+Flutter has Shortcuts which are key bindings that activate by pressing a key or combination of keys. The key combinations reside in a table with their bound intent. 
   
+![FUouKiqUsAAq7hK](https://user-images.githubusercontent.com/49326578/179342517-1cf7bde7-853c-4456-8cb2-e3735ef2fc67.jpg)
+
+When the Shortcuts widget invokes them, it sends their matching intent to the actions subsystem for fulfillment.
+ 
 ## 69
   
 Flutter has an ActivateIntent widget that maps each type of control to its corresponding version of an ActivateAction (and that executes the code that activates the control). This code often needs fairly private access to do its work.
